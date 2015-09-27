@@ -47,15 +47,15 @@ module.exports = function(Detail) {
         {
             accepts: {arg: 'playerId', type: 'number'},
             returns: {arg: 'latest', type: 'object'},
-            http: {path: '/details/latest/:playerId', verb: 'get'}
+            http: {path: '/latest/:playerId', verb: 'get'}
         }
     );
 
     Detail.remoteMethod(
         'latestAll',
         {
-            returns: {arg: 'latest', type: 'object'},
-            http: {path: '/details/latest/', verb: 'get'}
+            returns: {arg: 'latest', type: 'array'},
+            http: {path: '/latest/', verb: 'get'}
         }
     );
 };
