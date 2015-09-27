@@ -10,6 +10,22 @@
         "table": "detail"
     },
     "properties": {
+        "id": {
+            "type": "Number",
+            "required": true,
+            "length": null,
+            "precision": 32,
+            "scale": 0,
+            "postgresql": {
+                "columnName": "id",
+                "dataType": "integer",
+                "dataLength": null,
+                "dataPrecision": 32,
+                "dataScale": 0,
+                "nullable": "NO"
+            },
+            "_selectable": true
+        },
         "teamId": {
             "type": "Number",
             "required": false,
@@ -476,7 +492,6 @@
         },
         "playerId": {
             "type": "Number",
-            "id": true,
             "required": false,
             "length": null,
             "precision": 32,
